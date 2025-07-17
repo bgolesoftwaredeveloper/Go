@@ -5,7 +5,7 @@
 //
 // Author: Braiden Gole
 // Created: July 11, 2025
-package treap
+package TreapImplementation
 
 import "testing"
 

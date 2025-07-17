@@ -7,8 +7,9 @@
 package main
 
 import (
-	treap "braidengole/treap/TreapImplementation"
 	"fmt"
+
+	treap "github.com/bgolesoftwaredeveloper/treap/TreapImplementation"
 )
 
 func main() {
