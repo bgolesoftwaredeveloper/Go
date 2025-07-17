@@ -1,9 +1,38 @@
-// Example usage of the Treap data structure.
-// This program demonstrates insertion, in-order traversal, search, and memory cleanup
-// using the Treap implementation from the treap package.
+// ===================================================================================
+// File:        main.go
+// Description: Example usage of a bi-directional tree data structure implemented
 //
-// Author: Braiden Gole
-// Created: July 17, 2025
+//	in Go. This demonstration builds a hierarchical model representing
+//	pharmaceutical data related to Desvenlafaxine, including nodes for
+//	pharmacokinetics, pharmacodynamics, contraindications, and more.
+//
+//	The bi-directional tree allows each node to access both its parent
+//	and its children, enabling flexible traversal in both directions.
+//	The implementation used here is sourced from the "bi_directional"
+//	package.
+//
+// Author:      Braiden Gole
+// Created:     July 17, 2025
+//
+// Usage:
+//
+//	This program demonstrates how to construct and interact with a
+//	bi-directional tree structure to represent real-world hierarchical data.
+//	Specifically, it builds a tree rooted at "Pharmaceutical" and branches out
+//	to various aspects of Desvenlafaxine, an SNRI antidepressant.
+//
+//	Functions demonstrated:
+//	- Node creation using string and node values
+//	- Adding children to nodes (both string and Node types)
+//	- Tree traversal and printing using depth indentation
+//
+//	To run this program:
+//	$ go run main.go
+//
+// Dependencies:
+//   - "github.com/bgolesoftwaredeveloper/bi_directional/BiDirectionalImplementation"
+//
+// ===================================================================================
 package main
 
 import (

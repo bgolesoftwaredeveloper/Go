@@ -1,9 +1,35 @@
-// Package bi_directional provides a basic implementation of a bi-directional tree,
-// where each node maintains references to its parent and children.
-// This example demonstrates adding, finding, removing nodes, and printing the tree.
+// ===================================================================================
+// File:        BiDirectionalImplementation.go
+// Package:     bi_directional
+// Description: This package provides a basic yet extensible implementation of a
 //
-// Author: Braiden Gole
-// Created: July 17, 2025
+//	bi-directional tree in Go. Each node in the tree maintains references
+//	to its parent and its children, enabling traversal both up and down
+//	the hierarchy.
+//
+//	The implementation supports a variety of common tree operations:
+//	- Creating nodes with string values
+//	- Adding children via value or existing node references
+//	- Removing child nodes
+//	- Recursive search for node values
+//	- Printing the tree structure (top-down and bottom-up traversal)
+//
+//	This structure is ideal for representing hierarchical relationships
+//	where bidirectional navigation is essential, such as organizational
+//	charts, file systems, or pharmacological models.
+//
+// Author:      Braiden Gole
+// Created:     July 17, 2025
+//
+// Example Usage:
+//
+//	root := &Node{Value: "Root"}
+//	child := root.AddChild("Child")
+//	grandchild := child.AddChild("Grandchild")
+//	grandchild.PrintUp()    // Output: Grandchild <- Child <- Root
+//	root.PrintDown(0)       // Prints the full hierarchy starting from root
+//
+// ===================================================================================
 package BiDirectionalImplementation
 
 import "fmt"
