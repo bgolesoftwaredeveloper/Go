@@ -1,9 +1,35 @@
-// Package treap implements a Treap data structure (a combination of a binary search tree and a heap).
-// Each node has a key and a randomly assigned priority, ensuring balanced tree properties.
-// This package supports insertion, search, in-order traversal, and memory cleanup.
+// ===================================================================================
+// File:        TreapImplementation.go
+// Package:     treap
+// Description: This package implements a Treap data structure in Go. A Treap is a
 //
-// Author: Braiden Gole
-// Created: July 11, 2025
+//	randomized balanced binary search tree that maintains two invariants:
+//	- Binary Search Tree (BST) property based on node keys
+//	- Max Heap property based on randomly assigned node priorities
+//
+//	By combining these properties, the Treap achieves probabilistic
+//	balancing and supports efficient insertion, search, and traversal.
+//
+//	Features implemented in this package:
+//	- TreapNode struct with key, priority, left, and right pointers
+//	- Randomized priority assignment using a seeded RNG
+//	- Recursive insertion with rotations to preserve heap order
+//	- Binary search for existing keys
+//	- In-order traversal with a callback visitor function
+//	- Explicit tree cleanup to release memory (optional in Go)
+//
+// Author:      Braiden Gole
+// Created:     July 17, 2025
+//
+// Example Usage:
+//
+//	root := treap.Insert(nil, 10)
+//	root = treap.Insert(root, 20)
+//	node := treap.Search(root, 20)
+//	treap.InOrder(root, func(k, p int) { fmt.Printf("Key: %d, Priority: %d\n", k, p) })
+//	treap.Clear(&root)
+//
+// ===================================================================================
 package TreapImplementation
 
 import (

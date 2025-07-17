@@ -1,10 +1,46 @@
-// Package treap_test contains tests for the treap package.
-// It verifies correctness of insertion operations including
-// key presence, BST ordering, heap property maintenance,
-// handling of duplicates, and insertion into an empty treap.
+// ===================================================================================
+// File:        treap_test.go
+// Package:     treap
+// Description: This file contains unit tests for the Treap implementation. A Treap
 //
-// Author: Braiden Gole
-// Created: July 11, 2025
+//	is a randomized balanced binary search tree that maintains both BST
+//	ordering and heap-based priority balancing.
+//
+//	The tests in this file verify the correctness and integrity of the
+//	Treap's core operations, including:
+//
+//	- Left and right rotations (rotation correctness and property retention)
+//	- Insertions (duplicate handling, heap ordering, and in-order key ordering)
+//	- Searches (positive, negative, root, and empty-treap cases)
+//	- Memory cleanup via explicit clearing of the treap
+//
+//	All tests are written using Go’s built-in "testing" package.
+//
+// Author:      Braiden Gole
+// Created:     July 11, 2025
+//
+// Test Coverage:
+//
+//	✅ TestRotateLeftPreservesProperties
+//	✅ TestRotateRightPreservesProperties
+//	✅ TestInsertKeysPresent
+//	✅ TestInsertMaintainsBSTProperty
+//	✅ TestInsertMaintainsHeapProperty
+//	✅ TestInsertIgnoresDuplicates
+//	✅ TestInsertIntoEmpty
+//	✅ TestInsertWithRotationsMaintainsProperties
+//	✅ TestSearchFound
+//	✅ TestSearchNotFound
+//	✅ TestSearchEmptyTreap
+//	✅ TestSearchRootKey
+//	✅ TestClearEmptiesTreap
+//
+// Usage:
+//
+//	To run all tests:
+//	$ go test
+//
+// ===================================================================================
 package TreapImplementation
 
 import "testing"
