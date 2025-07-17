@@ -49,6 +49,8 @@ import "testing"
 // Rotation Testing
 // ================
 
+// TestRotateLeftPreservesProperties ensures that a left rotation
+// properly updates the treap structure while keeping BST and heap properties.
 func TestRotateLeftPreservesProperties(test *testing.T) {
 	// Arrange.
 	var root *TreapNode = &TreapNode{Key: 10, Priority: 10}
@@ -81,6 +83,8 @@ func TestRotateLeftPreservesProperties(test *testing.T) {
 	}
 }
 
+// TestRotateRightPreservesProperties ensures that a right rotation
+// properly updates the treap structure while keeping BST and heap properties.
 func TestRotateRightPreservesProperties(test *testing.T) {
 	// Arrange.
 	var root *TreapNode = &TreapNode{Key: 20, Priority: 10}

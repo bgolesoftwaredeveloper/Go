@@ -84,7 +84,7 @@ func (node *Node) RemoveChild(child *Node) bool {
 	for index, descendant := range node.Children {
 		if descendant == child {
 			// Remove from slice.
-			node.Children = append(node.Children[:index], node.Children[index+1])
+			node.Children = append(node.Children[:index], node.Children[index+1:]...)
 			child.Parent = nil
 
 			return true
