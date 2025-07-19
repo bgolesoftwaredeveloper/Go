@@ -33,7 +33,6 @@ import (
 )
 
 func main() {
-
 	var ahoCorasick *aho_corasick.AhoCorasick = aho_corasick.NewAhoCorasick()
 
 	// Define the set of patterns to search for.
