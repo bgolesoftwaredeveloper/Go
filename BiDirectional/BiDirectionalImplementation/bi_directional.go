@@ -45,7 +45,7 @@ type Node struct {
 // AddChild creates a new child node with the given value, attaches it to the current node,
 // and returns a pointer to the newly created child node.
 func (node *Node) AddChild(value string) *Node {
-	child := &Node{
+	var child *Node = &Node{
 		Value:  value,
 		Parent: node,
 	}
@@ -97,7 +97,7 @@ func (node *Node) RemoveChild(child *Node) bool {
 // PrintDown prints the tree structure starting from the current node down to all descendants.
 // The level argument is used to control indentation for hierarchical display.
 func (node *Node) PrintDown(level int) {
-	prefix := ""
+	var prefix string = ""
 
 	for index := 0; index < level; index++ {
 		prefix += "    "
