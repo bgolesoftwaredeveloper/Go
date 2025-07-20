@@ -35,7 +35,7 @@
 //	$ go test -v
 //
 // ===================================================================================
-package BiDirectionalImplementation
+package bidirectionalimplementation
 
 import (
 	"bytes"

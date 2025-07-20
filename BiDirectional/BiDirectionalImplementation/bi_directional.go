@@ -30,7 +30,7 @@
 //	root.PrintDown(0)       // Prints the full hierarchy starting from root
 //
 // ===================================================================================
-package BiDirectionalImplementation
+package bidirectionalimplementation
 
 import "fmt"
 

@@ -41,7 +41,7 @@
 //	$ go test
 //
 // ===================================================================================
-package TreapImplementation
+package treapimplementation
 
 import "testing"
 

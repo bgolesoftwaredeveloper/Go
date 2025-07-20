@@ -19,7 +19,7 @@
 // Created:     July 19, 2025
 //
 // ===================================================================================
-package AhoCorasickImplementation
+package ahocorasickimplementation
 
 import "container/list"
 

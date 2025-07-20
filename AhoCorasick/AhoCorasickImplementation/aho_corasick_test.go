@@ -33,7 +33,7 @@
 //	$ go test -v
 //
 // ===================================================================================
-package AhoCorasickImplementation
+package ahocorasickimplementation
 
 import (
 	"reflect"

@@ -30,7 +30,7 @@
 //	treap.Clear(&root)
 //
 // ===================================================================================
-package TreapImplementation
+package treapimplementation
 
 import (
 	"math/rand"
