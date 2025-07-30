@@ -55,19 +55,3 @@ func NewGraph(distanceMatrix [][]float64) *Graph {
 func (graph *Graph) DistanceBetween(source int, destination int) float64 {
 	return graph.DistanceMatrix[source][destination]
 }
-
-// EclideanDistance calculates the Euclidean distance between two points in 2D space.
-//
-// Parameters:
-//   xAxis       - x-coordinate of the first point
-//   yAxis       - y-coordinate of the first point
-//   otherXAxis  - x-coordinate of the second point
-//   otherYAxis  - y-coordinate of the second point
-//
-// Returns:
-//   The Euclidean distance as a float64 value.
-/*
-func EclideanDistance(xAxis float64, yAxis float64, otherXAxis float64, otherYAxis float64) float64 {
-	return math.Hypot(otherXAxis-xAxis, otherYAxis-xAxis)
-}
-*/
